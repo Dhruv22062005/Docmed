@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Docmed</title>
+    <style></style>
+    <script>
+
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container-lg">
+            <div class="row align-items-center justify-content-between">
+                <!-- Logo Section -->
+                <div class="col-2 d-flex align-items-center">
+                    <a href="index.html"><img src="Images/logo.png" alt="Logo" /></a>
+                </div>
+
+                <div class="col-6">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container-lg">
+                            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fas fa-bars"></i>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#home">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="department.html">Department</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="doctor.html">Doctors</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="doctor.html">Contact
+                                            Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </nav>
+                </div>
+
+                <!-- Button -->
+                <div class="col-4 ap d-flex justify-content-end my-auto">
+                    <a href="#" type="button" class="apbtn">Make an
+                        appointment</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- main -->
+    <div class="main" id="home">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="Images\banner\banner.png" class="d-block w-100" alt="..." />
+                    <div class="container">
+                        <div class="health position-absolute top-50 text-dark">
+                            <h2 class="fw-bold">Health Care</h2>
+                            <h2 id="for">For Whole Family</h2>
+                            <p class="mb-5">
+                                Quality healthcare for every family member, ensuring wellness at every stage of life.
+
+
+
+
+
+
+
+                            </p>
+                            <a href="#" class="apbtn chekbtn">Check Our
+                                Services</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="Images\banner\banner2.png" class="d-block w-100" alt="..." />
+                    <div class="container">
+                        <div class="health position-absolute top-50 text-dark">
+                            <h2 class="fw-bold">Health Care</h2>
+                            <h2 id="for">For Whole Family</h2>
+                            <p class="mb-5">
+                                Expert medical services for all ages, ensuring complete family wellness.
+
+
+                            </p>
+                            <a href="#" class="apbtn chekbtn">Check Our
+                                Services</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images\banner\banner.png" class="d-block w-100" alt="..." />
+                    <div class="container">
+                        <div class="health position-absolute top-50 text-dark">
+                            <h2 class="fw-bold">Health Care</h2>
+                            <h2 id="for">For Whole Family</h2>
+                            <p class="mb-5">
+                                Comprehensive healthcare under one roof, from check-ups to specialized treatments.
+
+
+                            </p>
+                            <a href="#" class="apbtn chekbtn">Check Our
+                                Services</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="Images\banner\banner2.png" class="d-block w-100" alt="..." />
+                    <div class="container">
+                        <div class="health position-absolute top-50 text-dark">
+                            <h2 class="fw-bold">Health Care</h2>
+                            <h2 id="for">For Whole Family</h2>
+                            <p class="mb-5">
+                                Reliable and accessible healthcare, tailored for your entire family’s needs.
+                            </p>
+                            <a href="#" class="apbtn chekbtn">Check Our
+                                Services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- main1 -->
+    <div class="main1">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-md-4 col-sm-12">
+                    <div class="con">
+                        <i class="fa-solid fa-bed"></i>
+                        <h5>Hospitality</h5>
+                        <p>Our hospital offers clean, adjustable, and well-equipped beds for a safe and comfortable
+                            recovery experience.
+
+                        </p>
+                        <a href="#" >Apply For A Bed</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 " style="background-color: #5DB2FF;" >
+                    <div class="con con1">
+                        <i class="fa-solid fa-truck-medical"></i>
+                        <h5>Emergency Care
+                        </h5>
+                        <p>Immediate medical attention with advanced facilities and expert care, available anytime.
+
+                        </p>
+                        <a href="#">+91 54425 543358</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="con">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        <h5>Chamber Service
+                        </h5>
+                        <p>Comfortable and private consultation spaces for patient-doctor discussions.
+
+
+
+
+
+
+
+                        </p>
+                        <a href="#" >make an appointment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- main2 -->
+
+    <div class="main2">
+        <div class="container">
+            <div class="row g-0 cr">
+                <div class="col-lg-6 col-md-12 aboutimg mx-auto">
+                    <div class="imgg d-flex justify-content-center">
+                        <div class="img1">
+                            <img src="Images\about\1.png" />
+                        </div>
+                        <div class="img2">
+                            <img src="Images\about\2.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 aboutt">
+                    <div class="info">
+                        <h2>welcome to docmed</h2>
+                        <h3>Best Care For Your <br />Good Health</h3>
+                        <p>
+                            At Docmed, we are dedicated to providing top-quality healthcare with compassion and expertise. Our highly skilled medical professionals ensure that every patient receives personalized treatment for their well-being.
+                        </p>
+                        <ul>
+                            <li>Comprehensive medical care for all ages</li>
+                            <li>
+                                State-of-the-art facilities and advanced treatments
+                            </li>
+                            <li> Compassionate and experienced healthcare professionals</li>
+                        </ul>
+                        <a href="#" type="button">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- department -->
+    <div class="our_deparment">
+        <div class="department container">
+            <div class="dtitle">
+                <h2>Our Departments</h2>
+                <p>
+                    At Docmed, we offer specialized medical care across multiple departments <br> to ensure comprehensive healthcare for our patients.
+                </p>
+            </div>
+            <div class="dname d-flex justify-content-center mt-5 ">
+                <div class="row drow">
+                    <div class="col-lg-4 col-md-6 col-sm-12 dbox">
+                        <div class="d1">
+                            <img src="Images\1.png" alt />
+                            <div class="dtext">
+                                <h5>Eye Care</h5>
+                                <p>Expert eye care services, including vision correction, cataract surgery, and advanced
+                                    treatments for various eye conditions.
+                                </p>
+                                <a href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 dbox">
+                        <div class="d1">
+                            <img src="Images\2.png" alt />
+                            <div class="dtext">
+                                <h5>Physical Therapy</h5>
+                                <p>
+                                    Personalized rehabilitation and physiotherapy to aid recovery, relieve pain, and
+                                    restore mobility.
+
+                                </p>
+                                <a href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 dbox">
+                        <div class="d1">
+                            <img src="Images\3.png" alt />
+                            <div class="dtext">
+                                <h5>Dental Care</h5>
+                                <p>
+                                    Comprehensive dental services, including preventive care, cosmetic dentistry,
+                                    orthodontics, and painless treatments.
+                                </p>
+                                <a href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 dbox">
+                        <div class="d1">
+                            <img src="Images\4.png" alt />
+                            <div class="dtext">
+                                <h5>Diagnostic Test</h5>
+                                <p>
+                                    Accurate diagnostic services, including MRI, CT scans, X-rays, and lab tests for
+                                    effective health monitoring.
+
+
+                                </p>
+                                <a href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 dbox">
+                        <div class="d1">
+                            <img src="Images\5.png" alt />
+                            <div class="dtext">
+                                <h5>Skin Surgery</h5>
+                                <p>
+                                    Specialized surgical care, including general, laparoscopic, cardiac, and orthopedic
+                                    surgeries with expert precision.
+
+
+                                </p>
+                                <a href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 dbox">
+                        <div class="d1">
+                            <img src="Images\6.png" alt />
+                            <div class="dtext">
+                                <h5>Surgery Services</h5>
+                                <p>
+                                    Advanced skin treatments, laser procedures, and cosmetic surgeries to enhance and
+                                    restore skin health.
+
+
+                                </p>
+                                <a href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- expert doctors -->
+    <div class="expert">
+        <div class="container">
+            <div class="expertheading">
+                <div class="etitle">
+                    <h3>Expert Doctors</h3>
+                </div>
+                <div class="leftright">
+                    <ion-icon name="chevron-back-circle-outline" onclick="cll()" class="ion"></ion-icon>
+                    <ion-icon name="chevron-forward-circle-outline" class="ion " onclick="clr()"></ion-icon>
+                </div>
+            </div>
+            <div class="doctors">
+                <div class="a">
+                    <div class="do1">
+                        <div class="do">
+                            <img src="Images\experts\1.png" id="doc1" alt="">
+                        </div>
+                        <div class="x">
+                            <h5>Dr. Robert Foster </h5>
+                            <h6>Ophthalmologist </h6>
+                        </div>
+
+
+                    </div>
+                    <div class="do1">
+                        <div class="do">
+                            <img src="Images\experts\2.png" id="doc1" alt="">
+                        </div>
+
+                        <div class="x">
+                            <h5>Dr. Bill Dorfman</h5>
+                            <h6>Cosmetic Dentist</h6>
+                        </div>
+
+
+                    </div>
+                    <div class="do1">
+                        <div class="do">
+                            <img src="Images\experts\3.png" id="doc1" alt="">
+                        </div>
+
+                        <div class="x">
+                            <h5>Dr. Jean Carruthers</h5>
+                            <h6>osmetic Dermatologist</h6>
+                        </div>
+
+
+                    </div>
+                    <div class="do1">
+                        <div class="do">
+                            <img src="Images\experts\4.png" id="doc1" alt="">
+                        </div>
+
+                        <div class="x">
+                            <h5>Dr. Michael DeBakey </h5>
+                            <h6>Cardiothoracic Surgeon</h6>
+                        </div>
+
+                    </div>
+                    <div class="do1">
+                        <div class="do">
+                            <img src="Images\experts\5.png" id="doc1" alt="">
+                        </div>
+
+                        <div class="x">
+                            <h5>Dr. Hedvig Hricak</h5>
+                            <h6>Radiologist & MRI Specialist</h6>
+                        </div>
+
+                    </div>
+                    <div class="do1">
+                        <div class="do">
+                            <img src="Images\experts\6.png" id="doc1" alt="">
+                        </div>
+
+                        <div class="x">
+                            <h5>Dr. Marilyn Moffat</h5>
+                            <h6>Physical Therapist & Educator </h6>
+                        </div>
+
+                    </div>
+                    <div class="do1">
+                        <div class="do">
+                            <img src="Images\experts\7.png" id="doc1" alt="">
+                        </div>
+
+                        <div class="x">
+                            <h5>Dr. Paul T. Finger</h5>
+                            <h6>Ocular Oncology</h6>
+                        </div>
+
+                    </div>
+                    <div class="do1">
+                        <div class="do">
+                            <img src="Images\experts\8.png" id="doc1" alt="">
+                        </div>
+                        <div class="x">
+                            <h5>Dr. Gazi Yasargil </h5>
+                            <h6>Neurosurgeon </h6>
+                        </div>
+
+                    </div>
+                    <div class="do1">
+                        <div class="do">
+                            <img src="Images\experts\9.png" id="doc1" alt="">
+                        </div>
+
+                        <div class="x">
+                            <h5>Dr. Joseph Massad</h5>
+                            <h6>Prosthodontist </h6>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- emergency -->
+    <div class="emergency">
+        <div class="d-flex custom-section">
+            <div class="custom-box left-box">
+                <h2>For Any Emergency Contact</h2>
+                <p>Esteem spirit temper too say adieus.</p>
+                <a href="tel:+103784673467" class="custom-btn">+10 378 4673 467</a>
+            </div>
+            <div class="custom-box right-box">
+                <h2>Make an Online Appointment</h2>
+                <p>Esteem spirit temper too say adieus.</p>
+                <a href="#" class="custom-btn">Make An Appointment</a>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <footer>
+        <div class="ft">
+            <div class="ftop">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 ">
+                            <div class="f1">
+                                <img src="Images\footer_logo.png" alt>
+                                <p>"Docmed - Caring for You, Every Step of the Way"</p>
+                                <div class="icons">
+                                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-3 col-md-6 ">
+                            <div class="f2">
+                                <div class="f2_title">
+                                    <h2>Departments</h2>
+                                </div>
+                                <div class="f2_lst">
+                                    <ul>
+                                        <li><a href="#">Eye Care</a></li>
+                                        <li><a href="#">Physical Therapy</a></li>
+
+                                        <li><a href="#">Dental Care</a></li>
+
+                                        <li><a href="#">Diagnostic Test</a></li>
+
+                                        <li><a href="#">Skin Surgery</a></li>
+
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6 ">
+                            <div class="f3">
+                                <div class="f3_title">
+                                    <h2>
+                                        Useful Links
+                                    </h2>
+                                </div>
+                                <div class="f3_lst">
+                                    <ul>
+                                        <li><a href="#">About</a></li>
+                                        <li><a href="#">Blog</a></li>
+
+                                        <li><a href="#">Support</a></li>
+
+                                        <li><a href="#">Appointment</a></li>
+
+                                        <li><a href="#">Doctors</a></li>
+
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 ">
+                            <div class="f4">
+                                <div class="f4_title">
+                                    <h2>Address</h2>
+                                </div>
+                                <p>200, D-block, Green lane USA
+                                    <br>
+                                    +10 367 467 8934
+                                    docmed@contact.com
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="fbotttom">
+                <p class="text-center">Copyright ©2025 All rights reserved | This website is created by Dhruv Nasit</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function cll() {
+            var x = document.querySelector('.a');
+            x.scrollLeft -= 325;
+        }
+        function clr() {
+            var x = document.querySelector('.a');
+            x.scrollLeft += 325;
+        }
+
+    </script>
+
+</body>
+
+</html>
