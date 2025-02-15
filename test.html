@@ -3,71 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emergency Contact Section</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <title>Make an Appointment</title>
     <style>
-      body {
-    font-family: 'Arial', sans-serif;
-}
-
-.emergency-contact {
-    background-color: #f8f9fa;
-    padding: 50px 0;
-}
-
-.emergency-contact h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #333;
-}
-
-.emergency-contact .lead {
-    font-size: 1.25rem;
-    color: #555;
-    margin-bottom: 20px;
-}
-
-.emergency-contact .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-    padding: 10px 20px;
-    font-size: 1rem;
-}
-
-.emergency-contact .quote {
-    font-style: italic;
-    color: #666;
-    font-size: 1.1rem;
-    margin-top: 20px;
-}
-
-.emergency-contact .contact-info {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
-    margin-top: 10px;
-}
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .appointment-form {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #007BFF;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+        button:hover {
+            background: #0056b3;
+        }
     </style>
 </head>
 <body>
-    <!-- Emergency Contact Section -->
-    <section class="emergency-contact py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2>For Any Emergency Contact</h2>
-                    <p class="lead">Make an Online Appointment</p>
-                    <a href="#" class="btn btn-primary">Make An Appointment</a>
-                </div>
-                <div class="col-md-6">
-                    <p class="quote">"Esteem spirit temper too say odious."</p>
-                    <p class="contact-info">10.378.4673.467</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <form class="appointment-form" id="appointmentForm">
+        <h2>Make an Appointment</h2>
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <input type="tel" id="phone" placeholder="Your Phone" required>
+        <select id="department" required>
+            <option value="">Select Department</option>
+            <option value="eye">Eye Care</option>
+            <option value="dental">Dental</option>
+            <option value="surgery">Surgery</option>
+            <option value="diagnostic">Diagnostic Tests</option>
+            <option value="therapy">Physical Therapy</option>
+        </select>
+        <input type="date" id="date" required>
+        <input type="time" id="time" required>
+        <button type="submit">Book Appointment</button>
+    </form>
+    
+    <script>
+        document.getElementById("appointmentForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Appointment booked successfully!");
+        });
+    </script>
 </body>
 </html>

@@ -775,3 +775,43 @@ a {
 }
 
 
+.modal-content {
+    border-radius: 10px;
+    border: none;
+}
+
+.modal-header {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.form-label {
+    font-weight: 500;
+    color: #1F1F1F;
+}
+
+.form-control, .form-select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #5DB2FF;
+    box-shadow: 0 0 0 0.2rem rgba(93, 178, 255, 0.25);
+}
+
+.btn:hover {
+    background-color: #009DFF !important;
+    transition: 0.3s ease-in-out;
+}
+
+#appointmentForm {
+    font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 768px) {
+    .modal-dialog {
+        margin: 1rem;
+    }
+}
