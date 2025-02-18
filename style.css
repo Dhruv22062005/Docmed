@@ -883,9 +883,18 @@ a {
 
 @media screen and (max-width: 576px) {
     .carousel-inner {
-        height: 400px; /* Adjust height for mobile */
+        height: 500px; /* Adjust height for mobile */
     }
-    
+    .health h2{
+font-size: 1.8rem !important;
+    }
+    .health p{
+        font-size: .8rem !important;
+        width: 80% !important;
+    }
+    #for{
+        font-size: 1.8rem !important;
+    }
     .carousel-item img {
         width: 100% !important; /* Override any other width settings */
         transform: none !important; /* Remove any transform that might cause jumping */
