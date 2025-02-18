@@ -33,3 +33,12 @@ document.addEventListener('DOMContentLoaded', function() {
     alert("Appointment Booked Successfully");
 }
 });
+
+function cll() {
+    var x = document.querySelector('.a');
+    x.scrollLeft -= 325;
+}
+function clr() {
+    var x = document.querySelector('.a');
+    x.scrollLeft += 325;
+}

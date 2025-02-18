@@ -11,25 +11,11 @@
     list-style: none;
     padding-left: 0;
 }
+
 @media screen and (max-width:992px) {
 
-    .navbar-collapse {
-        position: absolute;
-        top: 100%;
-        right: 0%;
-        border-radius: 9px;
-        width: 500px;
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.04);
-        background-color: white;
-        z-index: -11;
-        padding: 10px 0;
-
-        padding-left: 15px;
-
-    }
-.navbar-nav{
-    align-items: center;
-}
+  
+  
     .ap {
         display: none !important;
 
@@ -46,7 +32,6 @@
         padding: 5px 15px !important;
     }
 
-    .navbar-nav {}
 
     .health {
         left: 5%;
@@ -75,6 +60,37 @@
         width: 100%;
         height: 1200px !important;
     }
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        right: -50%;
+        min-width: 50%; /* adjust to 30% if preferred */
+        height: 100%;
+        background-color: #fff;
+        transition: right 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1050; /* ensure on top */
+    }
+    .navbar-collapse.show {
+        right: 0;
+    }
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .navbar-nav .nav-item {
+        width: 100%;
+        padding: 10px 0;
+        transition: background-color 0.3s ease;
+    }
+    .navbar-nav .nav-item:hover,
+    .navbar-nav .nav-item:focus {
+        background-color: #f8f9fa;
+    }
 }
 
 .header {
@@ -85,11 +101,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .nav-item a {
-        color: grey;
-        margin-right: .6rem;
-    }
-
+  
     .health {
         left: 3%;
         max-width: 400px;
@@ -142,7 +154,7 @@
         transform: scale(1) !important;
     }
 
-
+   
 }
 
 @media (max-width: 480px) {
@@ -155,7 +167,8 @@
         width: 60%;
         margin-left: 20px;
     }
-    .leftright .ion{
+
+    .leftright .ion {
         font-size: 2.2rem !important;
     }
 
@@ -180,7 +193,7 @@
     }
 
     .navbar-collapse {
-        max-width: 200%;
+        width: 50%;
     }
 }
 
@@ -205,13 +218,15 @@
     color: black;
     font-size: 1.5rem;
 }
+
 .carousel-control-prev {
-    
+
     width: 5%;
 
 }
+
 .carousel-control-next {
-   
+
     width: 5%;
 }
 
@@ -312,15 +327,15 @@
 
 
     padding: 15px 25px;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
 .con1 {
     background-color: #5DB2FF;
-   
+
 }
 
 .con i, .con h5, .con p, .con a {
@@ -487,9 +502,11 @@ height: 100%;
     padding-top: 120px;
     padding-bottom: 90px;
 }
-.department p{
+
+.department p {
     font-weight: 300;
 }
+
 .drow {
     width: 100%;
 }
@@ -508,9 +525,11 @@ height: 100%;
 .dtext a {
     opacity: .7;
 }
+
 .dtext p {
     font-weight: 300;
 }
+
 .dtitle h2 {
     margin-bottom: 30px;
 }
@@ -523,10 +542,12 @@ height: 100%;
 
 
 }
-.d1 a:hover{
+
+.d1 a:hover {
     font-weight: 500;
     text-decoration: underline;
 }
+
 a {
     text-decoration: none;
 }
@@ -550,7 +571,7 @@ a {
 
 }
 
-.dbox img:hover {
+.dbx img:hover {
 
     transform: scale(1.1);
     transition: .2s ease-in-out;
@@ -624,24 +645,29 @@ a {
     padding-left: 0;
 
 }
-.f2_lst ul li a,.f3_lst ul li a{
+
+.f2_lst ul li a, .f3_lst ul li a {
     text-decoration: none;
     color: gray;
-    
+
 }
+
 .f2 ul li, .f3 ul li {
     margin-bottom: 20px;
     font-weight: 300;
     cursor: pointer;
 }
-.f2_lst ul li a:hover{
+
+.f2_lst ul li a:hover {
     color: #007bff;
     transition: .3s ease-in-out;
 }
-.f3_lst ul li a:hover{
+
+.f3_lst ul li a:hover {
     color: #007bff;
     transition: .3s ease-in-out;
 }
+
 .fbotttom {
     padding: 10px;
     background: #000000;
@@ -724,7 +750,7 @@ a {
 }
 
 .leftright .ion {
-    font-size:2.5rem;
+    font-size: 2.5rem;
 }
 
 .ion:hover {
@@ -816,6 +842,17 @@ a {
 
 #appointmentForm {
     font-family: "Poppins", sans-serif;
+}
+
+.close-menu-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #000;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {

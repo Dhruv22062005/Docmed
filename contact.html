@@ -51,14 +51,14 @@
             margin-bottom: 30px;
         }
 
-        .box a {
+        .sent {
             margin-bottom: 50px;
             background: #fff;
             color: #131313;
             display: inline-block;
             padding: 18px 44px;
             font-family: "Poppins", sans-serif;
-            font-size: 14px;
+            font-size: 1rem;
             font-weight: 400;
             border: 0;
             border: 1px solid #009DFF;
@@ -69,7 +69,7 @@
             cursor: pointer;
         }
 
-        .box a:hover {
+        .sent:hover {
             color: white;
             background-color: #009DFF;
             transition: .3s ease-in-out;
@@ -221,28 +221,35 @@
             <h3>Get In Touch</h3>
             <div class="row tbox g-5">
                 <div class="col-lg-8 col-md-12 box">
+                    <form action="">
                     <div class="row g">
                         <div class="col-12 box1">
-                            <textarea name id rows="9" class="form-control" placeholder="Enter Messaage"></textarea>
+                            <textarea name id rows="9" class="form-control" placeholder="Enter Messaage" required></textarea>
 
                         </div>
                     </div>
                     <div class="row g-5 box2">
                         <div class="col-6">
-                            <input type="text" class="form-control" placeholder="Your Name">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
                         </div>
                         <div class="col-6">
-                            <input type="email" class="form-control" placeholder="Your Email">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
                         </div>
 
                     </div>
                     <div class="row box3">
                         <div class="col-12">
-                            <input type="text" placeholder="Enter Subject" class="form-control">
+                            <input type="text" placeholder="Enter Subject" class="form-control" required>
                         </div>
                     </div>
-                    <a href type="submit">Send</a>
+                <button type="submit" class="sent">Sent</button>
+                </form>
                 </div>
+               
+    
+    
+               
+               
 
                 <div class="col-lg-4 col-md-12">
                     <div class="td">
