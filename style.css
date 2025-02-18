@@ -63,8 +63,8 @@
     .navbar-collapse {
         position: fixed;
         top: 0;
-        right: -50%;
-        min-width: 50%; /* adjust to 30% if preferred */
+        right: -70%;
+        min-width: 70%; /* adjust to 30% if preferred */
         height: 100%;
         background-color: #fff;
         transition: right 0.3s ease;
@@ -192,9 +192,7 @@
         font-size: 1.6rem !important;
     }
 
-    .navbar-collapse {
-        width: 50%;
-    }
+    
 }
 
 .navbar-toggler {
@@ -510,7 +508,10 @@
 .drow {
     width: 100%;
 }
-
+.d1:hover  img{
+    transform: scale(1.1);
+    transition: .3s ease-in-out;
+}
 .d1 {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.04);
     border-radius: 7px;
