@@ -15,67 +15,15 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Docmed</title>
     <style></style>
-    <script>
-        // Add this to your existing script section
-        document.addEventListener('DOMContentLoaded', function() {
-            // Department-Doctor mapping
-            const doctors = {
-                'eye-care': ['Dr. Robert Foster', 'Dr. Paul T. Finger'],
-                'physical-therapy': ['Dr. Marilyn Moffat'],
-                'dental-care': ['Dr. Bill Dorfman', 'Dr. Joseph Massad'],
-                'diagnostic': ['Dr. Hedvig Hricak'],
-                'skin-surgery': ['Dr. Jean Carruthers'],
-                'surgery': ['Dr. Michael DeBakey', 'Dr. Gazi Yasargil']
-            };
-        
-            // Update doctors dropdown based on department selection
-            const departmentSelect = document.getElementById('department');
-            const doctorSelect = document.getElementById('doctor');
-        
-            departmentSelect.addEventListener('change', function() {
-                const selectedDepartment = this.value;
-                const departmentDoctors = doctors[selectedDepartment] || [];
-                
-                // Clear existing options
-                doctorSelect.innerHTML = '<option value="">Select Doctor</option>';
-                
-                // Add new options
-                departmentDoctors.forEach(doctor => {
-                    const option = document.createElement('option');
-                    option.value = doctor.toLowerCase().replace(/\s+/g, '-');
-                    option.textContent = doctor;
-                    doctorSelect.appendChild(option);
-                });
-            });
-        
-            // Form submission
-            const appointmentForm = document.getElementById('appointmentForm');
-            appointmentForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                // Show success message
-                const alert = document.createElement('div');
-                alert.className = 'alert alert-success mt-3';
-                alert.innerHTML = 'Appointment booked successfully! We will contact you shortly.';
-                appointmentForm.appendChild(alert);
-                
-                // Close modal after 3 seconds
-                setTimeout(() => {
-                    const modal = bootstrap.Modal.getInstance(document.getElementById('appointmentModal'));
-                    modal.hide();
-                    // Remove success message
-                    alert.remove();
-                    // Reset form
-                    appointmentForm.reset();
-                }, 3000);
-            });
-        });
-        </script>
+
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="script" href="script.js">
 </head>
 
 
@@ -125,105 +73,109 @@
                 <!-- Button -->
                 <div class="col-4 ap d-flex justify-content-end my-auto">
                     <!-- Update your appointment buttons to include this data attribute -->
-<a href="#" class="apbtn" data-bs-toggle="modal" data-bs-target="#appointmentModal">Make an appointment</a>
+                    <a href="#" class="apbtn" data-bs-toggle="modal" data-bs-target="#appointmentModal">Make an
+                        appointment</a>
                 </div>
             </div>
         </div>
     </div>
 
 
-<!-- appointment -->
+    <!-- appointment -->
 
-<div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header" style="background-color: #5DB2FF; color: white;">
-                <h5 class="modal-title" id="appointmentModalLabel">
-                    <i class="fa-solid fa-calendar-check me-2"></i>Book Your Appointment
-                </h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body p-4">
-                <form id="appointmentForm">
-                    <div class="row g-3">
-                        <!-- Department Selection -->
-                        <div class="col-md-6">
-                            <label class="form-label">Department</label>
-                            <select class="form-select" id="department" required>
-                                <option value="">Select Department</option>
-                                <option value="eye-care">Eye Care</option>
-                                <option value="physical-therapy">Physical Therapy</option>
-                                <option value="dental-care">Dental Care</option>
-                                <option value="diagnostic">Diagnostic Test</option>
-                                <option value="skin-surgery">Skin Surgery</option>
-                                <option value="surgery">Surgery Services</option>
-                            </select>
+    <div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color: #5DB2FF; color: white;">
+                    <h5 class="modal-title" id="appointmentModalLabel">
+                        <i class="fa-solid fa-calendar-check me-2"></i>Book Your Appointment
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form id="appointmentForm">
+                        <div class="row g-3">
+                            <!-- Department Selection -->
+                            <div class="col-md-6">
+                                <label class="form-label">Department</label>
+                                <select class="form-select" id="department" required>
+                                    <option value="">Select Department</option>
+                                    <option value="eye-care">Eye Care</option>
+                                    <option value="physical-therapy">Physical Therapy</option>
+                                    <option value="dental-care">Dental Care</option>
+                                    <option value="diagnostic">Diagnostic Test</option>
+                                    <option value="skin-surgery">Skin Surgery</option>
+                                    <option value="surgery">Surgery Services</option>
+                                </select>
+                            </div>
+
+                            <!-- Doctor Selection -->
+                            <div class="col-md-6">
+                                <label class="form-label">Doctor</label>
+                                <select class="form-select" id="doctor" required>
+                                    <option value="">Select Doctor</option>
+                                </select>
+                            </div>
+
+                            <!-- Personal Information -->
+                            <div class="col-md-6">
+                                <label class="form-label">Full Name</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Preferred Date</label>
+                                <input type="date" class="form-control" required>
+                            </div>
+
+                            <div class="col-md-12">
+                                <label class="form-label">Preferred Time</label>
+                                <select class="form-select" required>
+                                    <option value="">Select Time Slot</option>
+                                    <option>09:00 AM</option>
+                                    <option>09:30 AM</option>
+                                    <option>10:00 AM</option>
+                                    <option>10:30 AM</option>
+                                    <option>11:00 AM</option>
+                                    <option>11:30 AM</option>
+                                    <option>02:00 PM</option>
+                                    <option>02:30 PM</option>
+                                    <option>03:00 PM</option>
+                                    <option>03:30 PM</option>
+                                    <option>04:00 PM</option>
+                                    <option>04:30 PM</option>
+                                </select>
+                            </div>
+
+                            <div class="col-12">
+                                <label class="form-label">Message (Optional)</label>
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
                         </div>
 
-                        <!-- Doctor Selection -->
-                        <div class="col-md-6">
-                            <label class="form-label">Doctor</label>
-                            <select class="form-select" id="doctor" required>
-                                <option value="">Select Doctor</option>
-                            </select>
+                        <div class="mt-4">
+                            <button type="submit" class="btn w-100" onclick="sub()"
+                                style="background-color: #5DB2FF; color: white;">
+                                Book Appointment
+                            </button>
                         </div>
-
-                        <!-- Personal Information -->
-                        <div class="col-md-6">
-                            <label class="form-label">Full Name</label>
-                            <input type="text" class="form-control" required>
-                        </div>
-
-                        <div class="col-md-6">
-                            <label class="form-label">Phone Number</label>
-                            <input type="tel" class="form-control" required>
-                        </div>
-
-                        <div class="col-md-6">
-                            <label class="form-label">Email</label>
-                            <input type="email" class="form-control" required>
-                        </div>
-
-                        <div class="col-md-6">
-                            <label class="form-label">Preferred Date</label>
-                            <input type="date" class="form-control" required>
-                        </div>
-
-                        <div class="col-md-12">
-                            <label class="form-label">Preferred Time</label>
-                            <select class="form-select" required>
-                                <option value="">Select Time Slot</option>
-                                <option>09:00 AM</option>
-                                <option>09:30 AM</option>
-                                <option>10:00 AM</option>
-                                <option>10:30 AM</option>
-                                <option>11:00 AM</option>
-                                <option>11:30 AM</option>
-                                <option>02:00 PM</option>
-                                <option>02:30 PM</option>
-                                <option>03:00 PM</option>
-                                <option>03:30 PM</option>
-                                <option>04:00 PM</option>
-                                <option>04:30 PM</option>
-                            </select>
-                        </div>
-
-                        <div class="col-12">
-                            <label class="form-label">Message (Optional)</label>
-                            <textarea class="form-control" rows="3"></textarea>
-                        </div>
-                    </div>
-
-                    <div class="mt-4">
-                        <button type="submit" class="btn w-100" style="background-color: #5DB2FF; color: white;">
-                            Book Appointment
-                        </button>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 
 
@@ -325,10 +277,10 @@
                             recovery experience.
 
                         </p>
-                        <a href="#" >Apply For A Bed</a>
+                        <a href="#">Apply For A Bed</a>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-12 " style="background-color: #5DB2FF;" >
+                <div class="col-md-4 col-sm-12 " style="background-color: #5DB2FF;">
                     <div class="con con1">
                         <i class="fa-solid fa-truck-medical"></i>
                         <h5>Emergency Care
@@ -353,7 +305,7 @@
 
 
                         </p>
-                        <a href="#" >make an appointment</a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#appointmentModal">make an appointment</a>
                     </div>
                 </div>
             </div>
@@ -379,7 +331,9 @@
                         <h2>welcome to docmed</h2>
                         <h3>Best Care For Your <br />Good Health</h3>
                         <p>
-                            At Docmed, we are dedicated to providing top-quality healthcare with compassion and expertise. Our highly skilled medical professionals ensure that every patient receives personalized treatment for their well-being.
+                            At Docmed, we are dedicated to providing top-quality healthcare with compassion and
+                            expertise. Our highly skilled medical professionals ensure that every patient receives
+                            personalized treatment for their well-being.
                         </p>
                         <ul>
                             <li>Comprehensive medical care for all ages</li>
@@ -400,7 +354,8 @@
             <div class="dtitle">
                 <h2>Our Departments</h2>
                 <p>
-                    At Docmed, we offer specialized medical care across multiple departments <br> to ensure comprehensive healthcare for our patients.
+                    At Docmed, we offer specialized medical care across multiple departments <br> to ensure
+                    comprehensive healthcare for our patients.
                 </p>
             </div>
             <div class="dname d-flex justify-content-center mt-5 ">
@@ -619,12 +574,13 @@
             <div class="custom-box left-box">
                 <h2>For Any Emergency Contact</h2>
                 <p>Esteem spirit temper too say adieus.</p>
-                <a href="tel:+103784673467" class="custom-btn">+10 378 4673 467</a>
+                <a href="tel:+103784673467" class="custom-btn">+91 54425 543358</a>
             </div>
             <div class="custom-box right-box">
                 <h2>Make an Online Appointment</h2>
                 <p>Esteem spirit temper too say adieus.</p>
-                <a href="#" class="custom-btn">Make An Appointment</a>
+                <a href="#" class="custom-btn" data-bs-toggle="modal" data-bs-target="#appointmentModal">Make An
+                    Appointment</a>
             </div>
         </div>
 
@@ -708,9 +664,10 @@
                                 </div>
                                 <p>200, D-block, Green lane USA
                                     <br>
-                                    +10 367 467 8934
-                                    docmed@contact.com
+                                    +91 54425 543358
+
                                 </p>
+                                <p>docmed@contact.com</p>
                             </div>
                         </div>
 

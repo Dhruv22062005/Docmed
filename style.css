@@ -205,7 +205,15 @@
     color: black;
     font-size: 1.5rem;
 }
+.carousel-control-prev {
+    
+    width: 5%;
 
+}
+.carousel-control-next {
+   
+    width: 5%;
+}
 
 .header {
     padding: 20px;

@@ -86,40 +86,44 @@
 
         .td1 {
             display: flex;
-           
+
             align-items: center;
-            
+
         }
 
         .td1 i {
             font-size: 1.5rem;
-            
+
         }
 
         .tditext {
             margin-left: 15px;
             padding-top: 20px;
-           line-height: 1;
-           
+            line-height: 1;
+
         }
-        .container h3{
-            padding: 15px ;
+
+        .container h3 {
+            padding: 15px;
             font-size: 2.3rem;
-            font-weight:600;
+            font-weight: 600;
             letter-spacing: 1px;
         }
-.tditext h6{
-    font-weight: 600;
-    font-size: 1.1rem;
-}
-.tditext p{
-    font-weight: 300;
-}
+
+        .tditext h6 {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .tditext p {
+            font-weight: 300;
+        }
+
         .td2 {
             display: flex;
-            
+
             align-items: center;
-         
+
 
         }
 
@@ -129,25 +133,26 @@
 
         .td3 {
             display: flex;
-            
+
             align-items: center;
-          
+
         }
 
         .td3 i {
             font-size: 1.5rem;
         }
-        .td{
+
+        .td {
             margin-top: -20px;
         }
-
-        
     </style>
     <script>
 
     </script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="script" href="script.js">
+
 </head>
 
 <body>
@@ -192,7 +197,7 @@
 
                 <!-- Button -->
                 <div class="col-4 ap d-flex justify-content-end my-auto">
-                    <a href="#" type="button" class="apbtn">Make an
+                    <a href="#" type="button" class="apbtn" data-bs-toggle="modal" data-bs-target="#appointmentModal">Make an
                         appointment</a>
                 </div>
             </div>
@@ -245,16 +250,21 @@
                             <div class="tdi1">
                                 <i class="fa-solid fa-location-dot"></i>
                             </div>
-                            <div class="tditext"><h6>200, D-block,</h6>  <p>Green lane
-                                USA</p></div>
+                            <div class="tditext">
+                                <h6>200, D-block,</h6>
+                                <p>Green lane
+                                    USA</p>
+                            </div>
 
                         </div>
 
 
                         <div class="td2">
                             <div class="tdi2"><i class="fa-solid fa-phone"></i></div>
-                            <div class="tditext my-auto"><h6>+1 253 565 2365</h6> 
-                               <p> Mon to Fri 9am to 6pm</p></div>
+                            <div class="tditext my-auto">
+                                <h6>+1 253 565 2365</h6>
+                                <p> Mon to Fri 9am to 6pm</p>
+                            </div>
 
                         </div>
 
@@ -262,9 +272,11 @@
                         <div class="td3">
 
                             <div class="tdi3"><i class="fa-solid fa-envelope"></i></div>
-                            <div class="tditext"><h6>support@colorlib.com </h6>
-                               <p> Send us your query
-                                anytime!</p></div>
+                            <div class="tditext">
+                                <h6>support@colorlib.com </h6>
+                                <p> Send us your query
+                                    anytime!</p>
+                            </div>
 
                         </div>
 
@@ -275,6 +287,102 @@
 
         </div>
     </div>
+
+    <!-- appointment -->
+    <div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color: #5DB2FF; color: white;">
+                    <h5 class="modal-title" id="appointmentModalLabel">
+                        <i class="fa-solid fa-calendar-check me-2"></i>Book Your Appointment
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form id="appointmentForm">
+                        <div class="row g-3">
+                            <!-- Department Selection -->
+                            <div class="col-md-6">
+                                <label class="form-label">Department</label>
+                                <select class="form-select" id="department" required>
+                                    <option value="">Select Department</option>
+                                    <option value="eye-care">Eye Care</option>
+                                    <option value="physical-therapy">Physical Therapy</option>
+                                    <option value="dental-care">Dental Care</option>
+                                    <option value="diagnostic">Diagnostic Test</option>
+                                    <option value="skin-surgery">Skin Surgery</option>
+                                    <option value="surgery">Surgery Services</option>
+                                </select>
+                            </div>
+
+                            <!-- Doctor Selection -->
+                            <div class="col-md-6">
+                                <label class="form-label">Doctor</label>
+                                <select class="form-select" id="doctor" required>
+                                    <option value="">Select Doctor</option>
+                                </select>
+                            </div>
+
+                            <!-- Personal Information -->
+                            <div class="col-md-6">
+                                <label class="form-label">Full Name</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Preferred Date</label>
+                                <input type="date" class="form-control" required>
+                            </div>
+
+                            <div class="col-md-12">
+                                <label class="form-label">Preferred Time</label>
+                                <select class="form-select" required>
+                                    <option value="">Select Time Slot</option>
+                                    <option>09:00 AM</option>
+                                    <option>09:30 AM</option>
+                                    <option>10:00 AM</option>
+                                    <option>10:30 AM</option>
+                                    <option>11:00 AM</option>
+                                    <option>11:30 AM</option>
+                                    <option>02:00 PM</option>
+                                    <option>02:30 PM</option>
+                                    <option>03:00 PM</option>
+                                    <option>03:30 PM</option>
+                                    <option>04:00 PM</option>
+                                    <option>04:30 PM</option>
+                                </select>
+                            </div>
+
+                            <div class="col-12">
+                                <label class="form-label">Message (Optional)</label>
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <button type="submit" class="btn w-100" onclick="sub()"
+                                style="background-color: #5DB2FF; color: white;">
+                                Book Appointment
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- footer -->
     <footer>
         <div class="ft">
@@ -304,19 +412,14 @@
                                 </div>
                                 <div class="f2_lst">
                                     <ul>
-                                        <li><a href="#"></a>Eye
-                                            Care</li>
-                                        <li><a href="#"></a>Eye
-                                            Care</li>
+                                        <li><a href="#">Eye Care</a></li>
+                                        <li><a href="#">Physical Therapy</a></li>
 
-                                        <li><a href="#"></a>Eye
-                                            Care</li>
+                                        <li><a href="#">Dental Care</a></li>
 
-                                        <li><a href="#"></a>Eye
-                                            Care</li>
+                                        <li><a href="#">Diagnostic Test</a></li>
 
-                                        <li><a href="#"></a>Eye
-                                            Care</li>
+                                        <li><a href="#">Skin Surgery</a></li>
 
                                     </ul>
                                 </div>
@@ -332,14 +435,14 @@
                                 </div>
                                 <div class="f3_lst">
                                     <ul>
-                                        <li><a href="#"></a>About</li>
-                                        <li><a href="#"></a>Blog</li>
+                                        <li><a href="#">About</a></li>
+                                        <li><a href="#">Blog</a></li>
 
-                                        <li><a href="#"></a>Support</li>
+                                        <li><a href="#">Support</a></li>
 
-                                        <li><a href="#"></a>appointment</li>
+                                        <li><a href="#">Appointment</a></li>
 
-                                        <li><a href="#"></a>appointment</li>
+                                        <li><a href="#">Doctors</a></li>
 
                                     </ul>
                                 </div>
@@ -354,8 +457,8 @@
                                 <p>200, D-block, Green lane USA
                                     <br>
                                     +10 367 467 8934
-                                    docmed@contact.com
                                 </p>
+                                <p>docmed@contact.com</p>
                             </div>
                         </div>
 
