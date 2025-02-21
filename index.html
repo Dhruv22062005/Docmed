@@ -23,6 +23,7 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="script" href="script.js">
 </head>
 
 
@@ -33,7 +34,7 @@
     <div class="header">
         <div class="container-lg">
             <div class="row align-items-center justify-content-between">
-                
+                <!-- Logo Section -->
                 <div class="col-2 d-flex align-items-center">
                     <a href="index.html"><img src="Images/logo.png" alt="Logo" /></a>
                 </div>
@@ -48,7 +49,7 @@
                             </button>
 
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            
+                                <!-- Added close button for mobile -->
                                 <button type="button" class="close-menu-btn d-lg-none" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-label="Close Menu">
                                     <i class="fas fa-times"></i>
                                 </button>
@@ -73,9 +74,9 @@
                     </nav>
                 </div>
 
-            
+                <!-- Button -->
                 <div class="col-4 ap d-flex justify-content-end my-auto">
-                   
+                    <!-- Update your appointment buttons to include this data attribute -->
                     <a href="#" class="apbtn" data-bs-toggle="modal" data-bs-target="#appointmentModal">Make an
                         appointment</a>
                 </div>
@@ -100,7 +101,7 @@
                 <div class="modal-body p-4">
                     <form id="appointmentForm">
                         <div class="row g-3">
-                            
+                            <!-- Department Selection -->
                             <div class="col-md-6">
                                 <label class="form-label">Department</label>
                                 <select class="form-select" id="department" required>
@@ -114,7 +115,7 @@
                                 </select>
                             </div>
 
-                            
+                            <!-- Doctor Selection -->
                             <div class="col-md-6">
                                 <label class="form-label">Doctor</label>
                                 <select class="form-select" id="doctor" required>
@@ -122,7 +123,7 @@
                                 </select>
                             </div>
 
-                            
+                            <!-- Personal Information -->
                             <div class="col-md-6">
                                 <label class="form-label">Full Name</label>
                                 <input type="text" class="form-control" required>
@@ -291,7 +292,7 @@
                         <p>Immediate medical attention with advanced facilities and expert care, available anytime.
 
                         </p>
-                        <a href="#">+91 54425 543358</a>
+                        <a href="tel:+9154425543358">+91 54425 543358</a>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12">
@@ -577,7 +578,7 @@
             <div class="custom-box left-box">
                 <h2>For Any Emergency Contact</h2>
                 <p>Esteem spirit temper too say adieus.</p>
-                <a href="tel:+103784673467" class="custom-btn">+91 54425 543358</a>
+                <a href="tel:+9154425543358"" class="custom-btn">+91 54425 543358</a>
             </div>
             <div class="custom-box right-box">
                 <h2>Make an Online Appointment</h2>
@@ -683,7 +684,10 @@
             </div>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js">
+       
+
+    </script>
 
 </body>
 
