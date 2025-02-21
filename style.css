@@ -91,9 +91,9 @@
     .navbar-nav .nav-item:focus {
         background-color: #f8f9fa;
     }
-    .nav-item a:hover{
-        color: white !important;
-        background-color: #007bff !important;
+  
+    .td{
+        margin-top: 0px !important;
     }
 }
 .nav-item a:hover{
@@ -185,7 +185,9 @@
     }
 
 }
-
+.td{
+    margin-top: -300px;
+}
 @media (max-width: 576px) {
     .carousel-item img {
         object-fit: cover !important;
