@@ -91,15 +91,25 @@
     .navbar-nav .nav-item:focus {
         background-color: #f8f9fa;
     }
+    .nav-item a:hover{
+        color: white !important;
+        background-color: #007bff !important;
+    }
 }
-
+.nav-item a:hover{
+    color: #009DFF !important;
+}
 .header {
     background-color: white;
     top: 0;
     position: sticky;
     z-index: 12;
 }
-
+.tbox{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+}
 @media screen and (max-width: 768px) {
   
     .health {
@@ -156,85 +166,7 @@
         transform: scale(1) !important;
     }
 
-    .dtitle h2 {
-        font-size: 2rem;
-    }
-    
-    .dtitle p {
-        font-size: 0.9rem;
-        padding: 0 15px;
-    }
-
-    .dbox {
-        padding: 0 15px;
-    }
-
-    .d1 {
-        margin-bottom: 20px;
-    }
-
-    .dtext {
-        padding: 15px;
-    }
-
-    .dtext h5 {
-        font-size: 1.1rem;
-    }
-
-    .dtext p {
-        font-size: 0.9rem;
-    }
-
-    .touch {
-        padding: 20px 0;
-    }
-
-    .touch h3 {
-        font-size: 1.8rem !important;
-        text-align: center;
-    }
-
-    .tbox {
-        padding: 15px !important;
-    }
-
-    .box1 textarea {
-        height: 150px;
-    }
-
-    .box2 {
-        gap: 15px !important;
-    }
-
-    .box2 .col-6 {
-        width: 100%;
-    }
-
-    .sent {
-        width: 100%;
-        padding: 12px !important;
-    }
-
-    .td {
-        margin-top: 30px;
-    }
-
-    .td1, .td2, .td3 {
-        margin-bottom: 25px;
-        justify-content: center;
-    }
-
-    .tditext {
-        text-align: center;
-    }
-
-    .tditext h6 {
-        font-size: 1rem;
-    }
-
-    .tditext p {
-        font-size: 0.9rem;
-    }
+   
 }
 
 @media (max-width: 480px) {
@@ -272,27 +204,7 @@
         font-size: 1.6rem !important;
     }
 
-    .text h2 {
-        font-size: 2rem !important;
-    }
     
-    .text p {
-        font-size: 0.9rem;
-    }
-
-    .main img {
-        height: 200px !important;
-    }
-
-    .touch h3 {
-        font-size: 1.5rem !important;
-        padding: 10px !important;
-    }
-
-    .sent {
-        font-size: 0.9rem;
-        letter-spacing: 2px;
-    }
 }
 
 .navbar-toggler {
