@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <style>
+        .text {
+            position: absolute;
+            top: 25%;
+            left: 18%;
+        }
+
+        .text h2 {
+            font-weight: 500;
+            font-size: 3rem;
+
+
+        }
+
+        .main img {
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .touch {
+            margin-top: 30px;
+        }
+
+        .tbox {
+            padding: 20px;
+        }
+
+       
+
+        .sent {
+            margin-bottom: 50px;
+            background: #fff;
+            color: #131313;
+            display: inline-block;
+            padding: 18px 44px;
+            font-family: "Poppins", sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            border: 0;
+            border: 1px solid #009DFF;
+            letter-spacing: 3px;
+            text-align: center;
+            color: #009DFF;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        .sent:hover {
+            color: white;
+            background-color: #009DFF;
+            transition: .3s ease-in-out;
+        }
+
+        input {
+            padding: 15px !important;
+        }
+
+        textarea {
+            border: none;
+            padding: 15px !important;
+        }
+
+        .td1 {
+            display: flex;
+
+            align-items: center;
+
+        }
+
+        .td1 i {
+            font-size: 1.5rem;
+
+        }
+
+        .tditext {
+            margin-left: 15px;
+            padding-top: 20px;
+            line-height: 1;
+
+        }
+
+        .container h3 {
+            padding: 15px;
+            font-size: 2.3rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .tditext h6 {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .tditext p {
+            font-weight: 300;
+        }
+
+        .td2 {
+            display: flex;
+
+            align-items: center;
+
+
+        }
+
+        .td2 i {
+            font-size: 1.5rem;
+        }
+
+        .td3 {
+            display: flex;
+
+            align-items: center;
+
+        }
+
+        .td3 i {
+            font-size: 1.5rem;
+        }
+
+        .td {
+            margin-top: -20px;
+        }
+    </style>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container-lg">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-2 d-flex align-items-center">
+                    <a href="index.html"><img src="Images/logo.png" alt="Logo" /></a>
+                </div>
+
+                <div class="col-6">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container-lg">
+                            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fas fa-bars"></i>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="department.html">Department</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="doctor.html">Doctors</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="contact.html">Contact
+                                            Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class="col-4 ap d-flex justify-content-end my-auto">
+                    <a href="#" type="button" class="apbtn" data-bs-toggle="modal" data-bs-target="#appointmentModal">Make an
+                        appointment</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="m">
+            <img src="Images\banner\bradcam3.png" class="w-100" alt>
+            <div class="text ">
+                <h2>Contact</h2>
+                <p>Home / Contact</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="touch">
+        <div class="container">
+            <h3>Get In Touch</h3>
+            <div class="row tbox g-5 mx-auto">
+                <div class="col-lg-8 col-md-12 box">
+                    <form action="">
+                    <div class="row g">
+                        <div class="col-12 box1">
+                            <textarea name id rows="9" class="form-control" placeholder="Enter Messaage" required></textarea>
+
+                        </div>
+                    </div>
+                    <div class="row box2">
+                        <div class="col-lg-6 col-sm-12">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+
+                    </div>
+                    <div class="row box3">
+                        <div class="col-12">
+                            <input type="text" placeholder="Enter Subject" class="form-control" required>
+                        </div>
+                    </div>
+                <button type="submit" class="sent">Sent</button>
+                </form>
+                </div>
+               
+    
+    
+               
+               
+
+                <div class="col-lg-4 col-md-12 add">
+                    <div class="td">
+                        <div class="td1">
+                            <div class="tdi1">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="tditext">
+                                <h6>Dumas Road, beside Big Bazar,</h6>
+                                <p> Piplod, Surat, Gujarat 395007</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="td2">
+                            <div class="tdi2"><i class="fa-solid fa-phone"></i></div>
+                            <div class="tditext my-auto">
+                                <h6>+91 54425 543358</h6>
+                                <p> Mon to Fri 9am to 6pm</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="td3">
+
+                            <div class="tdi3"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="tditext">
+                                <h6>Docmed@contact.com </h6>
+                                <p> Send us your query
+                                    anytime!</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- appointment -->
+    <div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color: #5DB2FF; color: white;">
+                    <h5 class="modal-title" id="appointmentModalLabel">
+                        <i class="fa-solid fa-calendar-check me-2"></i>Book Your Appointment
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form id="appointmentForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Department</label>
+                                <select class="form-select" id="department" required>
+                                    <option value="">Select Department</option>
+                                    <option value="eye-care">Eye Care</option>
+                                    <option value="physical-therapy">Physical Therapy</option>
+                                    <option value="dental-care">Dental Care</option>
+                                    <option value="diagnostic">Diagnostic Test</option>
+                                    <option value="skin-surgery">Skin Surgery</option>
+                                    <option value="surgery">Surgery Services</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Doctor</label>
+                                <select class="form-select" id="doctor" required>
+                                    <option value="">Select Doctor</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Full Name</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Preferred Date</label>
+                                <input type="date" class="form-control" required>
+                            </div>
+
+                            <div class="col-md-12">
+                                <label class="form-label">Preferred Time</label>
+                                <select class="form-select" required>
+                                    <option value="">Select Time Slot</option>
+                                    <option>09:00 AM</option>
+                                    <option>09:30 AM</option>
+                                    <option>10:00 AM</option>
+                                    <option>10:30 AM</option>
+                                    <option>11:00 AM</option>
+                                    <option>11:30 AM</option>
+                                    <option>02:00 PM</option>
+                                    <option>02:30 PM</option>
+                                    <option>03:00 PM</option>
+                                    <option>03:30 PM</option>
+                                    <option>04:00 PM</option>
+                                    <option>04:30 PM</option>
+                                </select>
+                            </div>
+
+                            <div class="col-12">
+                                <label class="form-label">Message (Optional)</label>
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <button type="submit" class="btn w-100" onclick="sub()"
+                                style="background-color: #5DB2FF; color: white;">
+                                Book Appointment
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="ft">
+            <div class="ftop">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 ">
+                            <div class="f1">
+                                <img src="Images\footer_logo.png" alt>
+                                <p>"Docmed - Caring for You, Every Step of the Way"</p>
+                                <div class="icons">
+                                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-3 col-md-6 ">
+                            <div class="f2">
+                                <div class="f2_title">
+                                    <h2>Departments</h2>
+                                </div>
+                                <div class="f2_lst">
+                                    <ul>
+                                        <li><a href="#">Eye Care</a></li>
+                                        <li><a href="#">Physical Therapy</a></li>
+
+                                        <li><a href="#">Dental Care</a></li>
+
+                                        <li><a href="#">Diagnostic Test</a></li>
+
+                                        <li><a href="#">Skin Surgery</a></li>
+
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6 ">
+                            <div class="f3">
+                                <div class="f3_title">
+                                    <h2>
+                                        Useful Links
+                                    </h2>
+                                </div>
+                                <div class="f3_lst">
+                                    <ul>
+                                        <li><a href="#">About</a></li>
+                                        <li><a href="#">Blog</a></li>
+
+                                        <li><a href="#">Support</a></li>
+
+                                        <li><a href="#">Appointment</a></li>
+
+                                        <li><a href="#">Doctors</a></li>
+
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 ">
+                            <div class="f4">
+                                <div class="f4_title">
+                                    <h2>Address</h2>
+                                </div>
+                                <p>Dumas Road, beside Big Bazar, Piplod, Surat, Gujarat 395007
+                                    <br>
+                                    +10 367 467 8934
+                                </p>
+                                <p>docmed@contact.com</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="fbotttom">
+                <p class="text-center">Copyright ©2025 All rights
+                    reserved | This website is created by Dhruv Nasit</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
