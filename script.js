@@ -29,10 +29,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    function sub(){
+    
+});
+
+function sub(){
     alert("Appointment Booked Successfully");
 }
-});
 
 function cll() {
     var x = document.querySelector('.a');
